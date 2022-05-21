@@ -1,0 +1,43 @@
+@use 'component/navbar';
+@use 'component/hero';
+@use 'component/spinner';
+@use 'component/content';
+@use 'component/detail';
+@use 'component/footer';
+@use 'component/responsive';
+@use 'component/variable' as *;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    background-color: #fff;
+    
+}
+
+.skip-link {
+   position: absolute;
+   top: -40px;
+   left: 0;
+   background-color: #bf1722;
+   color: white;
+   padding: 8px;
+   z-index: 100;
+}
+
+.skip-link:focus {
+   top: 0;
+}
+
+
+
+
+

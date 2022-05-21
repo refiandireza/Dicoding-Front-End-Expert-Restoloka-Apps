@@ -1,0 +1,14 @@
+@use 'variable' as *;
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: $primary;
+    padding: 8px 0;
+    p {
+        font-weight: 600;
+        color: #fff;
+    }
+}

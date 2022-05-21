@@ -1,0 +1,140 @@
+@use 'variable' as *;
+
+body {
+    background: #fff;
+}
+.content-restaurant {
+    width: 100%;
+    // height: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    .title {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+        color: $dark;
+        
+    }
+    .line {
+        margin: 0 auto;
+        height: 5px;
+        width: 60px;
+        background-color: $dark;
+    }
+
+    .wrapper {
+        padding: 20px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.detail-restaurant {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 2px 6px 22px -9px rgba(0,0,0,0.51);
+        -webkit-box-shadow: 2px 6px 22px -9px rgba(0,0,0,0.51);
+        -moz-box-shadow: 2px 6px 22px -9px rgba(0,0,0,0.51);
+    .detail-img {
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 10;
+        }
+
+        .img-overlay {
+            width: 100%;
+            height: 100%;
+            background: $dark;
+            opacity: 0.4;
+            z-index: 11;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 11;
+        }
+    }
+    .detail-content, .detail-description, .menu {
+        margin: 10px 40px;
+    }
+    .detail-description {
+        border-bottom: 3px solid $dark;
+        padding-bottom: 10px;
+        p {
+            text-align: justify;
+        }
+    }
+    .detail-content {
+        border-bottom: 3px solid $dark;
+        padding-bottom: 10px;
+    }
+    .detail-rating {
+        i {
+            color: $gold;
+        }
+    }
+
+    .detail-review-wrapper {
+        h2 {
+            color: $dark;
+        }
+    }
+    
+}
+
+.form-review {
+    box-shadow: 2px 6px 22px -9px rgba(0,0,0,0.51);
+        -webkit-box-shadow: 2px 6px 22px -9px rgba(0,0,0,0.51);
+        -moz-box-shadow: 2px 6px 22px -9px rgba(0,0,0,0.51);
+    margin-bottom: 100px;
+    background: #fff;
+    form {
+        input {
+            height: 44px;
+            border: 2px solid $dark;
+        }
+    }
+    .form-control {
+            padding: 10px;
+        }
+
+    #submit-review {
+        height: 44px;
+        min-width: 44px;
+        color: #fff;
+
+    }
+
+    
+}
+
+#likeButtonContainer {
+    .like {
+        font-size: 30px;
+        position: fixed;
+        bottom: 25px;
+        right: 25px;
+        background-color: #fff;
+        color: $dark;
+        border: 5px solid $dark;
+        border-radius: 50%;
+        width: 70px;
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        cursor: pointer;
+        i {
+            z-index: 1000;
+        }
+    }
+}

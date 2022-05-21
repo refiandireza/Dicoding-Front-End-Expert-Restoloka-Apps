@@ -1,0 +1,76 @@
+@use 'variable' as *;
+
+
+
+.navbar {
+    background-color: $primary;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    position: relative;
+    .navbar-brand {
+        font-family: 'Poppins';
+        cursor: pointer;
+        color: #fff;
+        font-size: 1.25em;
+        font-weight: 600;
+        min-width: 44px;
+        min-height: 44px;
+        padding: 6px 0;
+        text-decoration: none;
+        i {
+            font-size: 0.9em;
+        }
+    }
+    ul {
+        display: none;
+        li {
+            list-style: none;
+            padding: 0 10px;
+            margin: 0 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            vertical-align: middle;
+            
+            a {
+                text-decoration: none;
+                font-size: 1.5em;
+                font-weight: 600;
+                color: #fff;
+                padding: 0 5px;
+                transition: ease 0.4s;
+                padding: 4px;
+            }
+        }
+        li:hover {
+            
+            a {
+                color: $primary;
+                background-color: #fff;
+                border-radius: 5px;
+            }
+        }
+    }
+    #hamburger {
+        position: absolute;
+        right: 15px;
+        top: 2px;
+        text-decoration: none;
+        font-size: 20px;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
+        transition: all 0.3 ease;
+        min-width: 44px;
+        min-height: 44px;
+        i {
+            color: #fff;
+        }
+    }
+
+    
+}
+

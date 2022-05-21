@@ -1,0 +1,47 @@
+@use 'variable' as *;
+
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        font-size: 5em;
+        color: $dark;
+    }
+    h2 {
+        text-align: center;
+    }
+}
+.spinner {
+    height: 50vh;
+    width: 100vh;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+        height: 100px;
+        width: 100px;
+        border: 15px solid $dark;
+        border-top-color: $light2;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+
+    }
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
